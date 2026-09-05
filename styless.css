@@ -39,14 +39,18 @@ nav ul {
 }
 
 nav a {
-    color: #8df663;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #8df663;
+}
+nav a:active{
+    color: #8df663;
 }
 
 
@@ -89,46 +93,6 @@ section h2 {
     background-color: #333;
 }
 
-.productosDestacados {
-    text-align: center;
-}
-
-.contenedorProductos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-.producto {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-}
-
-.producto img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.producto img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.producto h3 {
-    margin-bottom: 8px;
-}
-
-.producto p {
-    font-size: 15px;
-}
 
 .porqueElegirnos {
     text-align: center;
