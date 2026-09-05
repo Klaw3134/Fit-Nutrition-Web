@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | FitNutrition</title>
+
+    <link rel="stylesheet" href="styless.css">
+</head>
+
+<body>
+    <header>
+        <h1>FitNutrition</h1>
+        <p>
+            Suplementos para llevar tu entrenamiento al siguiente nivel
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="registro.html">Registro</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+
+        <section class="paginaProductos">
+            <h2>Nuestros productos</h2>
+            <p>
+                Encuentra suplementos para complementar tu entrenamiento
+                y alcanzar tus objetivos.
+            </p>
+            <div class="contenedorProductos">
+                <article class="producto">
+                    <img src="img/proteina.jpg"
+                         alt="Proteína en polvo">
+                    <h3>Proteína</h3>
+                    <p>
+                        Proteína aíslada en polvo ideal para complementar
+                        la alimentación y apoyar la recuperación muscular.
+                    </p>
+                    <p class="precio">
+                        $89.990
+                    </p>
+                    <button type="button" onclick="mostrarProducto('Proteína')">
+                        Ver producto
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="img/creatina.jpg"
+                         alt="Creatina">
+                    <h3>Creatina</h3>
+                    <p>
+                        Suplemento utilizado para complementar
+                        el entrenamiento y apoyar el rendimiento físico.
+                    </p>
+                    <p class="precio">
+                        $19.990
+                    </p>
+                    <button type="button" onclick="mostrarProducto('Creatina')">
+                        Ver producto
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="img/preentreno.jpeg"
+                         alt="Pre-entreno">
+                    <h3>Pre-entreno</h3>
+                    <p>
+                        Producto pensado para complementar tus
+                        sesiones de entrenamiento.
+                    </p>
+                    <p class="precio">
+                        $29.990
+                    </p>
+                    <button type="button" onclick="mostrarProducto('Pre-entreno')">
+                        Ver producto
+                    </button>
+                </article>
+
+                <article class="producto">
+                    <img src="img/magnesio.jpeg"
+                         alt="Magnesio">
+                    <h3>Magnesio</h3>
+                    <p>
+                        Suplemento que puedes incorporar como parte
+                        de una alimentación equilibrada.
+                    </p>
+                    <p class="precio">
+                        $24.990
+                    </p>
+                    <button type="button" onclick="mostrarProducto('Magnesio')">
+                        Ver producto
+                    </button>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2026 FitNutrition. Todos los derechos reservados.
+        </p>
+        <p>
+            Suplementos deportivos y nutrición
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
