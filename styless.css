@@ -130,10 +130,6 @@ footer p {
     margin: 5px;
 }
 
-/* =========================
-   PÁGINA DE PRODUCTOS
-   ========================= */
-
 .paginaProductos {
     text-align: center;
 }
@@ -146,9 +142,6 @@ footer p {
     margin-bottom: 30px;
 }
 
-
-/* CONTENEDOR */
-
 .contenedorProductos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -156,9 +149,6 @@ footer p {
     max-width: 850px;
     margin: 0 auto;
 }
-
-
-/* TARJETAS */
 
 .producto {
     background-color: #ffffff;
@@ -173,9 +163,6 @@ footer p {
     align-items: center;
 }
 
-
-/* IMÁGENES */
-
 .producto img {
     width: 180px;
     height: 200px;
@@ -184,23 +171,15 @@ footer p {
 }
 
 
-/* NOMBRE */
-
 .producto h3 {
     font-size: 24px;
     margin-bottom: 8px;
 }
 
-
-/* DESCRIPCIÓN */
-
 .producto p {
     font-size: 16px;
     margin-bottom: 8px;
 }
-
-
-/* PRECIO */
 
 .producto .precio {
     color: #68b82b;
@@ -209,8 +188,6 @@ footer p {
     margin: 8px 0;
 }
 
-
-/* BOTÓN */
 
 .producto button {
     background-color: #111820;
@@ -228,7 +205,6 @@ footer p {
 }
 
 
-/* EFECTO DE LA TARJETA */
 
 .producto:hover {
     transform: translateY(-3px);
@@ -237,13 +213,10 @@ footer p {
 }
 
 
-/* =========================
-   CELULARES
-   ========================= */
 
 @media (max-width: 700px) {
 
-    .contenedor-productos {
+    .contenedorProductos {
         grid-template-columns: 1fr;
     }
 
@@ -258,3 +231,69 @@ footer p {
 
 }
 
+
+.formularios {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 450px));
+    justify-content: center;
+    gap: 30px;
+}
+
+.formularioSeccion {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formularioSeccion h2 {
+    text-align: center;
+}
+
+.formularioSeccion > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #68b82b;
+    border-color: #68b82b;
+}
+
+form button {
+    margin-top: 18px;
+}
+
+.error {
+    color: #c0392b;
+    min-height: 18px;
+    font-size: 13px;
+}
+
+.mensaje-form {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}

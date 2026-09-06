@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNutrition | Contacto</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+<header>
+    <h1>FitNutrition</h1>
+    <p>Suplementos para llevar tu entrenamiento al siguiente nivel</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="formularios">
+    <section class="formularioSeccion">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna consulta, puedes enviarnos un mensaje.</p>
+
+        <form id="formContacto" novalidate>
+            <label for="contactoNombre">Nombre</label>
+            <input type="text" id="contactoNombre" name="nombre" required>
+            <small class="error" id="errorContactoNombre"></small>
+
+            <label for="contactoEmail">Correo electrónico</label>
+            <input type="email" id="contactoEmail" name="email" required>
+            <small class="error" id="errorContactoEmail"></small>
+
+            <label for="contactoMensaje">Mensaje</label>
+            <textarea id="contactoMensaje" name="mensaje" rows="6" required></textarea>
+            <small class="error" id="errorContactoMensaje"></small>
+
+            <button type="submit">Enviar mensaje</button>
+            <p class="mensajeForm" id="mensajeContacto"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 FitNutrition. Todos los derechos reservados.</p>
+    <p class="footer-acento">Suplementos deportivos y nutrición</p>
+    <p class="redes">Instagram &nbsp; Facebook &nbsp; WhatsApp</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
