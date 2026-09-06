@@ -49,7 +49,7 @@ nav a {
 nav a:hover {
     color: #8df663;
 }
-nav a:active{
+nav a.active{
     color: #8df663;
 }
 
