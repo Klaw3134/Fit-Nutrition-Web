@@ -1,67 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitNutrition | Registro</title>
-  <link rel="stylesheet" href="styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Ingreso - FitNutrition</title>
+    <link rel="stylesheet" href="styless.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>FitNutrition</h1>
+<header>
+    <div class="logo">
+        <h1>FitNutrition</h1>
+        <p>Suplementos para mejorar tu rendimiento</p>
+    </div>
+
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="registro.html" class="active">Registro / Ingreso</a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="registro.html" class="active">Registro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
 
-    <section id="registro">
-      <h2>Crear cuenta</h2>
-      <form id="formRegistro">
-        <label for="regNombre">Nombre completo</label>
-        <input type="text" 
-               id="regNombre" 
-               name="nombre" autocomplete="name" required>
+    <section class="formularios">
+        <section class="formulario-seccion">
 
-        <label for="regEmail">Correo electrónico</label>
-        <input type="email"
-               id="regEmail" 
-               name="email" autocomplete="email" required>
+            <h2>Crear una cuenta</h2>
 
-        <label for="regPassword">Contraseña</label>
-        <input type="password" 
-               id="regPassword" 
-               name="password" autocomplete="newPassword" required>
+            <p>Regístrate para conocer nuestros productos y novedades.</p>
 
-        <button type="submit">Registrarme</button>
-      </form>
+            <form id="formRegistro">
+
+                <label for="regNombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="regNombre"
+                    name="nombre"
+                    autocomplete="name"
+                    placeholder="Ingresa tu nombre"
+                >
+                <small id="errorNombre" class="error"></small>
+
+                <label for="regEmail">Correo electrónico:</label>
+                <input
+                    type="email"
+                    id="regEmail"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="ejemplo@correo.com"
+                >
+                <small id="errorEmail" class="error"></small>
+
+                <label for="regPassword">Contraseña:</label>
+                <input
+                    type="password"
+                    id="regPassword"
+                    name="password"
+                    autocomplete="new-password"
+                    placeholder="Mínimo 6 caracteres"
+                >
+                <small id="errorPassword" class="error"></small>
+
+                <button type="submit">Registrarme</button>
+
+                <p id="mensajeRegistro" class="mensaje-form"></p>
+
+            </form>
+
+        </section>
+        <section class="formulario-seccion">
+
+            <h2>Ingresar</h2>
+
+            <p>Si ya tienes una cuenta, puedes ingresar aquí.</p>
+
+            <form id="formLogin">
+
+                <label for="loginEmail">Correo electrónico:</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="ejemplo@correo.com"
+                >
+                <small id="errorLoginEmail" class="error"></small>
+
+                <label for="loginPassword">Contraseña:</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    name="password"
+                    autocomplete="current-password"
+                    placeholder="Ingresa tu contraseña"
+                >
+                <small id="errorLoginPassword" class="error"></small>
+
+                <button type="submit">Ingresar</button>
+
+                <p id="mensajeLogin" class="mensaje-form"></p>
+
+            </form>
+
+        </section>
+
     </section>
 
-    <section id="login">
-      <h2>Iniciar sesión</h2>
-      <form id="formLogin">
-        <label for="loginEmail">Correo electrónico</label>
-        <input type="email" 
-                id="loginEmail" 
-                name="email" autocomplete="email" required>
+</main>
 
-        <label for="loginPassword">Contraseña</label>
-        <input type="password" 
-                id="loginPassword" 
-                name="password" autocomplete="currentPassword" required>
-
-        <button type="submit">Ingresar</button>
-      </form>
-    </section>
-
-  </main>
-
-  <footer>
+<footer>
     <p>&copy; 2026 FitNutrition. Todos los derechos reservados.</p>
-  </footer>
+    <p>Suplementos deportivos para acompañar tus objetivos.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
