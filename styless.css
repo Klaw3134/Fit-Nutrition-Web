@@ -238,6 +238,15 @@ footer p {
     justify-content: center;
     gap: 30px;
 }
+.formularioIndividual {
+    display: flex;
+    justify-content: center;
+}
+
+.formularioIndividual .formularioSeccion {
+    width: 100%;
+    max-width: 450px;
+}
 
 .formularioSeccion {
     background-color: #ffffff;
