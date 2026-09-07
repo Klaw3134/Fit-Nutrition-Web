@@ -270,6 +270,10 @@ footer p {
         height: 170px;
     }
 
+    .formularios{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 
