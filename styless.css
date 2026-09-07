@@ -274,6 +274,14 @@ footer p {
         grid-template-columns: 1fr;
     }
 
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
 }
 
 
