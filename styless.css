@@ -11,48 +11,60 @@ body {
     line-height: 1.5;
 }
 
-
 header {
     background-color: #1b1f27;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(126, 255, 76, 0.08) 0, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(126, 255, 76, 0.05) 0, transparent 25%),
+        linear-gradient(135deg, #1b1f27 0%, #242b37 100%);
     color: #fff;
-    padding: 25px 20px;
+    padding: 35px 20px 25px;
     text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(126, 255, 76, 0.7);
 }
 
 header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 header p {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 1.15rem;
+    color: #d8d8d8;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
 }
-
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 12px;
+    padding: 0;
+    margin: 25px 0 0;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #8df663;
-}
-nav a.active{
-    color: #8df663;
+    background-color: rgba(126, 255, 76, 0.12);
+    color: #7eff4c;
 }
 
+nav a.active {
+    background-color: #3efa73;
+    color: #1b1f27;
+}
 
 main {
     max-width: 1100px;
@@ -93,6 +105,28 @@ section h2 {
     background-color: #333;
 }
 
+.formularioSeccion button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #9afc73;
+    color: #1b1f27;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formularioSeccion button:hover {
+    background-color: #9dfa7b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.formularioSeccion button:active {
+    transform: translateY(0);
+}
 
 .porqueElegirnos {
     text-align: center;
@@ -120,10 +154,17 @@ section h2 {
 
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #1b1f27;
+    background-image:
+        radial-gradient(circle at 15% 40%, rgba(126, 255, 76, 0.06) 0, transparent 25%),
+        radial-gradient(circle at 85% 60%, rgba(126, 255, 76, 0.04) 0, transparent 25%),
+        linear-gradient(135deg, #1b1f27 0%, #242b37 100%);
+    background-size: auto, auto, cover;
     color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
